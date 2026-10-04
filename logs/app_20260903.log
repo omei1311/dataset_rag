@@ -1,0 +1,464 @@
+2026-09-03 16:36:06.957 | ERROR    | node_document_split.py:<module>       :289  - 本地测试 - 测试文件不存在：D:\myworkspace-python\PythonProject\dataset_rag\output\hak180产品安全手册\hak180产品安全手册.md
+2026-09-03 17:15:42.438 | ERROR    | node_import_milvus.py:node_import_milvus:143  - >>> [node_import_milvus]导入chunks对应的向量数据库发生了异常，异常信息：<MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+2026-09-03 17:15:42.556 | ERROR    | import_process.py   :run_import_graph:89   - ====图执行失败！发生异常====
+Traceback (most recent call last):
+
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000028A820B54E0>
+    └ <WorkerThread(AnyIO worker thread, started 28096)>
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000028AB4E8FCE0>
+    └ <WorkerThread(AnyIO worker thread, started 28096)>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function run_import_graph at 0x0000028AB3CA62A0>, 'a7291114-6133-48c6-9652-7888d913c1f1', 'D:\\myworkspace...
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x0000028B31737D40>
+
+> File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\api\import_process.py", line 81, in run_import_graph
+    for event in kb_import_app.stream(init_state):
+        │        │             │      └ {'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_pdf_read_enabled': False, 'is_md_read_enabled': False, 'is_normal_spl...
+        │        │             └ <function Pregel.stream at 0x0000028A87F8BA60>
+        │        └ <langgraph.graph.state.CompiledStateGraph object at 0x0000028B30A5FA10>
+        └ {'node_bge_embedding': {'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_md_read_enabled': False, 'is_pdf_read_enabled'...
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x0000028A87F49D00>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x0000028B317E7710>
+        └ None
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x0000028A87F49300>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_md_read_enabled...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_md_read_enabled...
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spli...
+            │       │   │    └ <function RunnableCallable.invoke at 0x0000028A87BBAC00>
+            │       │   └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x0000028B3174D000>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'task_id': 'a7291114-6133-48c6-9652-7888d913c1f1', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spl...
+          │    └ <function node_import_milvus at 0x0000028B30AAF240>
+          └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 138, in node_import_milvus
+    with_id_chunks = step_4_insert_collections(milvus_client,chunks)
+                     │                         │             └ [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \n...
+                     │                         └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+                     └ <function step_4_insert_collections at 0x0000028B30AAF1A0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 100, in step_4_insert_collections
+    insert_result = milvus_client.insert(collection_name=CHUNKS_COLLECTION_NAME, data=chunks)
+                    │             │                      │                            └ [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \n...
+                    │             │                      └ 'kb_chunks'
+                    │             └ <function MilvusClient.insert at 0x0000028B30A22CA0>
+                    └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 270, in insert
+    res = conn.insert_rows(
+          │    └ <function GrpcHandler.insert_rows at 0x0000028B309A1800>
+          └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 521, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B31745B90>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A1940>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+           │    │      │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B31745B90>}
+           │    │      └ ('kb_chunks', [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单 ...
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A18A0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B31745B90>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A1760>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 121, in handler
+    return func(self, collection_name, *args, **kwargs)
+           │    │     │                 │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B31745B90>}
+           │    │     │                 └ ([{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \...
+           │    │     └ 'kb_chunks'
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A16C0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\grpc_handler.py", line 978, in insert_rows
+    check_status(resp.status)
+    │            └ status {
+    │                error_code: IllegalArgument
+    │                reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36...
+    └ <function check_status at 0x0000028B30710FE0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+          │               │           └ error_code: IllegalArgument
+          │               │             reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid pa...
+          │               └ <classmethod(<function MilvusException.from_status at 0x0000028B30710C20>)>
+          └ <class 'pymilvus.exceptions.MilvusException'>
+
+pymilvus.exceptions.MilvusException: <MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+During task with name 'node_import_milvus' and id 'b234f0b6-a5c5-2e1f-8662-a0064bb546ff'
+2026-09-03 17:16:42.376 | ERROR    | node_import_milvus.py:node_import_milvus:143  - >>> [node_import_milvus]导入chunks对应的向量数据库发生了异常，异常信息：<MilvusException: (code=1100, message=the num_rows (31) of field (file_title) is not equal to passed num_rows (34): invalid parameter[expected=34][actual=31])>
+2026-09-03 17:16:42.414 | ERROR    | import_process.py   :run_import_graph:89   - ====图执行失败！发生异常====
+Traceback (most recent call last):
+
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000028A820B54E0>
+    └ <WorkerThread(AnyIO worker thread, started 30856)>
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000028AB4E8FCE0>
+    └ <WorkerThread(AnyIO worker thread, started 30856)>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function run_import_graph at 0x0000028AB3CA62A0>, '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'D:\\myworkspace...
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x0000028B38C85E40>
+
+> File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\api\import_process.py", line 81, in run_import_graph
+    for event in kb_import_app.stream(init_state):
+        │        │             │      └ {'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_pdf_read_enabled': False, 'is_md_read_enabled': False, 'is_normal_spl...
+        │        │             └ <function Pregel.stream at 0x0000028A87F8BA60>
+        │        └ <langgraph.graph.state.CompiledStateGraph object at 0x0000028B30A5FA10>
+        └ {'node_bge_embedding': {'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_md_read_enabled': False, 'is_pdf_read_enabled'...
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x0000028A87F49D00>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x0000028B38D0E190>
+        └ None
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x0000028A87F49300>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_md_read_enabled...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_md_read_enabled...
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spli...
+            │       │   │    └ <function RunnableCallable.invoke at 0x0000028A87BBAC00>
+            │       │   └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x0000028AB3949D00>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'task_id': '8c42fedf-9d72-4dc2-87e1-654bebf9b6a6', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spl...
+          │    └ <function node_import_milvus at 0x0000028B30AAF240>
+          └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 138, in node_import_milvus
+    with_id_chunks = step_4_insert_collections(milvus_client,chunks)
+                     │                         │             └ [{'title': '## 目录', 'content': '## 目录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n显示器开关机及OSD菜单设置  \n显示器菜单选项  \n支持的显...
+                     │                         └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+                     └ <function step_4_insert_collections at 0x0000028B30AAF1A0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 100, in step_4_insert_collections
+    insert_result = milvus_client.insert(collection_name=CHUNKS_COLLECTION_NAME, data=chunks)
+                    │             │                      │                            └ [{'title': '## 目录', 'content': '## 目录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n显示器开关机及OSD菜单设置  \n显示器菜单选项  \n支持的显...
+                    │             │                      └ 'kb_chunks'
+                    │             └ <function MilvusClient.insert at 0x0000028B30A22CA0>
+                    └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 270, in insert
+    res = conn.insert_rows(
+          │    └ <function GrpcHandler.insert_rows at 0x0000028B309A1800>
+          └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 521, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028AB39441D0>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目录', 'content': '## 目录\...
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A1940>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+           │    │      │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028AB39441D0>}
+           │    │      └ ('kb_chunks', [{'title': '## 目录', 'content': '## 目录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n显示器开关机及OSD菜单设置  \n显...
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A18A0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028AB39441D0>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目录', 'content': '## 目录\...
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A1760>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 121, in handler
+    return func(self, collection_name, *args, **kwargs)
+           │    │     │                 │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028AB39441D0>}
+           │    │     │                 └ ([{'title': '## 目录', 'content': '## 目录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n显示器开关机及OSD菜单设置  \n显示器菜单选项  \n支持的...
+           │    │     └ 'kb_chunks'
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A16C0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\grpc_handler.py", line 978, in insert_rows
+    check_status(resp.status)
+    │            └ status {
+    │                error_code: IllegalArgument
+    │                reason: "the num_rows (31) of field (file_title) is not equal to passed num_rows (34...
+    └ <function check_status at 0x0000028B30710FE0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+          │               │           └ error_code: IllegalArgument
+          │               │             reason: "the num_rows (31) of field (file_title) is not equal to passed num_rows (34): invalid pa...
+          │               └ <classmethod(<function MilvusException.from_status at 0x0000028B30710C20>)>
+          └ <class 'pymilvus.exceptions.MilvusException'>
+
+pymilvus.exceptions.MilvusException: <MilvusException: (code=1100, message=the num_rows (31) of field (file_title) is not equal to passed num_rows (34): invalid parameter[expected=34][actual=31])>
+During task with name 'node_import_milvus' and id '57bb957f-abdb-65ab-2118-5609dc4ae9f7'
+2026-09-03 17:17:34.368 | ERROR    | node_import_milvus.py:node_import_milvus:143  - >>> [node_import_milvus]导入chunks对应的向量数据库发生了异常，异常信息：<MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+2026-09-03 17:17:34.401 | ERROR    | import_process.py   :run_import_graph:89   - ====图执行失败！发生异常====
+Traceback (most recent call last):
+
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000028A820B54E0>
+    └ <WorkerThread(AnyIO worker thread, started 14484)>
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000028AB4E8FCE0>
+    └ <WorkerThread(AnyIO worker thread, started 14484)>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function run_import_graph at 0x0000028AB3CA62A0>, '2ac57e21-384b-4086-821f-ad55f836fa17', 'D:\\myworkspace...
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x0000028B3077A2C0>
+
+> File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\api\import_process.py", line 81, in run_import_graph
+    for event in kb_import_app.stream(init_state):
+        │        │             │      └ {'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_pdf_read_enabled': False, 'is_md_read_enabled': False, 'is_normal_spl...
+        │        │             └ <function Pregel.stream at 0x0000028A87F8BA60>
+        │        └ <langgraph.graph.state.CompiledStateGraph object at 0x0000028B30A5FA10>
+        └ {'node_bge_embedding': {'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_md_read_enabled': False, 'is_pdf_read_enabled'...
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x0000028A87F49D00>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x0000028AB394AC50>
+        └ None
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x0000028A87F49300>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_md_read_enabled...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_md_read_enabled...
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spli...
+            │       │   │    └ <function RunnableCallable.invoke at 0x0000028A87BBAC00>
+            │       │   └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x0000028B34E65900>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'task_id': '2ac57e21-384b-4086-821f-ad55f836fa17', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spl...
+          │    └ <function node_import_milvus at 0x0000028B30AAF240>
+          └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 138, in node_import_milvus
+    with_id_chunks = step_4_insert_collections(milvus_client,chunks)
+                     │                         │             └ [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \n...
+                     │                         └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+                     └ <function step_4_insert_collections at 0x0000028B30AAF1A0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 100, in step_4_insert_collections
+    insert_result = milvus_client.insert(collection_name=CHUNKS_COLLECTION_NAME, data=chunks)
+                    │             │                      │                            └ [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \n...
+                    │             │                      └ 'kb_chunks'
+                    │             └ <function MilvusClient.insert at 0x0000028B30A22CA0>
+                    └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 270, in insert
+    res = conn.insert_rows(
+          │    └ <function GrpcHandler.insert_rows at 0x0000028B309A1800>
+          └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 521, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30C23C10>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A1940>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+           │    │      │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30C23C10>}
+           │    │      └ ('kb_chunks', [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单 ...
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A18A0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30C23C10>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A1760>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 121, in handler
+    return func(self, collection_name, *args, **kwargs)
+           │    │     │                 │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30C23C10>}
+           │    │     │                 └ ([{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \...
+           │    │     └ 'kb_chunks'
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A16C0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\grpc_handler.py", line 978, in insert_rows
+    check_status(resp.status)
+    │            └ status {
+    │                error_code: IllegalArgument
+    │                reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36...
+    └ <function check_status at 0x0000028B30710FE0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+          │               │           └ error_code: IllegalArgument
+          │               │             reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid pa...
+          │               └ <classmethod(<function MilvusException.from_status at 0x0000028B30710C20>)>
+          └ <class 'pymilvus.exceptions.MilvusException'>
+
+pymilvus.exceptions.MilvusException: <MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+During task with name 'node_import_milvus' and id 'b8a88a40-37cc-662e-9347-620d97eb6a2e'
+2026-09-03 17:24:05.951 | ERROR    | node_import_milvus.py:node_import_milvus:143  - >>> [node_import_milvus]导入chunks对应的向量数据库发生了异常，异常信息：<MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+2026-09-03 17:24:05.995 | ERROR    | import_process.py   :run_import_graph:89   - ====图执行失败！发生异常====
+Traceback (most recent call last):
+
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000028A820B54E0>
+    └ <WorkerThread(AnyIO worker thread, started 14484)>
+  File "C:\Users\57756\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function WorkerThread.run at 0x0000028AB4E8FCE0>
+    └ <WorkerThread(AnyIO worker thread, started 14484)>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1033, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<function run_import_graph at 0x0000028AB3CA62A0>, 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'D:\\myworkspace...
+             │       └ <method 'run' of '_contextvars.Context' objects>
+             └ <_contextvars.Context object at 0x0000028B30ABCD80>
+
+> File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\api\import_process.py", line 81, in run_import_graph
+    for event in kb_import_app.stream(init_state):
+        │        │             │      └ {'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_pdf_read_enabled': False, 'is_md_read_enabled': False, 'is_normal_spl...
+        │        │             └ <function Pregel.stream at 0x0000028A87F8BA60>
+        │        └ <langgraph.graph.state.CompiledStateGraph object at 0x0000028B30A5FA10>
+        └ {'node_bge_embedding': {'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_md_read_enabled': False, 'is_pdf_read_enabled'...
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2967, in stream
+    for _ in runner.tick(
+        │    │      └ <function PregelRunner.tick at 0x0000028A87F49D00>
+        │    └ <langgraph.pregel._runner.PregelRunner object at 0x0000028B34EC7A90>
+        └ None
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 207, in tick
+    run_with_retry(
+    └ <function run_with_retry at 0x0000028A87F49300>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 617, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           │    │           │    │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+           │    │           │    └ <member 'input' of 'PregelExecutableTask' objects>
+           │    │           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_md_read_enabled...
+           │    └ <member 'proc' of 'PregelExecutableTask' objects>
+           └ PregelExecutableTask(name='node_import_milvus', input={'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_md_read_enabled...
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 707, in invoke
+    input = context.run(step.invoke, input, config, **kwargs)
+            │       │   │    │       │      │         └ {}
+            │       │   │    │       │      └ {'configurable': {'__pregel_runtime': Runtime(context=None, store=None, stream_writer=<function Pregel.stream.<locals>.stream...
+            │       │   │    │       └ {'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spli...
+            │       │   │    └ <function RunnableCallable.invoke at 0x0000028A87BBAC00>
+            │       │   └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+            │       └ <method 'run' of '_contextvars.Context' objects>
+            └ <_contextvars.Context object at 0x0000028B38D0C780>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 447, in invoke
+    ret = self.func(*args, **kwargs)
+          │    │     │       └ {}
+          │    │     └ ({'task_id': 'a5a37d9b-68aa-440c-99f3-9b4c36b97634', 'is_md_read_enabled': False, 'is_pdf_read_enabled': True, 'is_normal_spl...
+          │    └ <function node_import_milvus at 0x0000028B30AAF240>
+          └ node_import_milvus(tags=None, recurse=True, explode_args=False, func_accepts={})
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 138, in node_import_milvus
+    logger.warning(f"第 {idx} 个 chunk 不是字典，已跳过")
+    │      └ <function Logger.warning at 0x0000028A869742C0>
+    └ <loguru.logger handlers=[(id=1, level=20, sink=<stdout>), (id=2, level=40, sink='D:\myworkspace-python\PythonProject\dataset_...
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\app\import_process\agent\nodes\node_import_milvus.py", line 100, in step_4_insert_collections
+    insert_result = milvus_client.insert(collection_name=CHUNKS_COLLECTION_NAME, data=chunks)
+                    │             │                      │                            └ [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \n...
+                    │             │                      └ 'kb_chunks'
+                    │             └ <function MilvusClient.insert at 0x0000028B30A22CA0>
+                    └ <pymilvus.milvus_client.milvus_client.MilvusClient object at 0x0000028B318DBED0>
+
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\milvus_client\milvus_client.py", line 270, in insert
+    res = conn.insert_rows(
+          │    └ <function GrpcHandler.insert_rows at 0x0000028B309A1800>
+          └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 521, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30AC3E90>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A1940>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+           │    │      │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30AC3E90>}
+           │    │      └ ('kb_chunks', [{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单 ...
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function retry_on_rpc_failure.<locals>.wrapper.<locals>.handler at 0x0000028B309A18A0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+           │     │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30AC3E90>}
+           │     └ (<pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>, 'kb_chunks', [{'title': '## 目 录', 'content': '## 目 ...
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A1760>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\decorators.py", line 121, in handler
+    return func(self, collection_name, *args, **kwargs)
+           │    │     │                 │       └ {'partition_name': '', 'timeout': None, 'context': <pymilvus.client.call_context.CallContext object at 0x0000028B30AC3E90>}
+           │    │     │                 └ ([{'title': '## 目 录', 'content': '## 目 录\n\n关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n使用五向摇杆按键开关机、设置菜单  \n显示器菜单选项  \...
+           │    │     └ 'kb_chunks'
+           │    └ <pymilvus.client.grpc_handler.GrpcHandler object at 0x0000028B31802550>
+           └ <function GrpcHandler.insert_rows at 0x0000028B309A16C0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\grpc_handler.py", line 978, in insert_rows
+    check_status(resp.status)
+    │            └ status {
+    │                error_code: IllegalArgument
+    │                reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36...
+    └ <function check_status at 0x0000028B30710FE0>
+  File "D:\myworkspace-python\PythonProject\dataset_rag\.venv\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+          │               │           └ error_code: IllegalArgument
+          │               │             reason: "the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid pa...
+          │               └ <classmethod(<function MilvusException.from_status at 0x0000028B30710C20>)>
+          └ <class 'pymilvus.exceptions.MilvusException'>
+
+pymilvus.exceptions.MilvusException: <MilvusException: (code=1100, message=the num_rows (33) of field (file_title) is not equal to passed num_rows (36): invalid parameter[expected=36][actual=33])>
+During task with name 'node_import_milvus' and id '52d2eb00-ec24-08d8-4c66-085d27cb692a'

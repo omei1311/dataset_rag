@@ -1,0 +1,4 @@
+2026-09-04 16:49:23.114 | ERROR    | milvus_utils.py     :get_milvus_client:30   - Milvus客户端连接异常：<MilvusException: (code=2, message=Fail connecting to server on 10.251.158.31:19530, illegal connection params or server unavailable)>
+2026-09-04 16:49:23.118 | ERROR    | milvus_utils.py     :hybrid_search  :195  - Milvus混合搜索执行失败，集合[kb_chunks]：'NoneType' object has no attribute 'hybrid_search'
+2026-09-04 16:49:30.294 | ERROR    | milvus_utils.py     :get_milvus_client:30   - Milvus客户端连接异常：<MilvusException: (code=2, message=Fail connecting to server on 10.251.158.31:19530, illegal connection params or server unavailable)>
+2026-09-04 16:49:30.297 | ERROR    | milvus_utils.py     :hybrid_search  :195  - Milvus混合搜索执行失败，集合[kb_chunks]：'NoneType' object has no attribute 'hybrid_search'

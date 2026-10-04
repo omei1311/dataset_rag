@@ -1,0 +1,3787 @@
+[
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.667,
+                0.286,
+                0.91,
+                0.334
+            ],
+            "angle": 0,
+            "content": "用户指南"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.802,
+                0.858,
+                0.905,
+                0.933
+            ],
+            "angle": 0,
+            "content": "HUAWEI"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.665,
+                0.285,
+                0.913,
+                0.336
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.059,
+                0.043,
+                0.16,
+                0.077
+            ],
+            "angle": 0,
+            "content": "目录"
+        },
+        {
+            "type": "index",
+            "bbox": [
+                0.129,
+                0.09,
+                0.508,
+                0.428
+            ],
+            "angle": 0,
+            "content": "关于本手册  \n显示器外观和接口介绍  \n安装与拆卸显示器  \n显示器连接至计算机等设备  \n显示器开关机及OSD菜单设置  \n显示器菜单选项  \n支持的显示模式  \n常见问题  \n安全信息  \n法律声明"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.948,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "i"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.051,
+                0.043,
+                0.163,
+                0.08
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.054,
+                0.043,
+                0.277,
+                0.078
+            ],
+            "angle": 0,
+            "content": "关于本手册"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.11,
+                0.351,
+                0.129
+            ],
+            "angle": 0,
+            "content": "使用设备前请仔细阅读本手册。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.136,
+                0.941,
+                0.201
+            ],
+            "angle": 0,
+            "content": "手册中展示的组件可能未包含在设备内，您需要单独购买；手册中描述的功能可能需要与其他组件配合，才能使用；手册中的图形、界面可能和实际有差异，所有图示仅供参考，请以实际产品为准。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.943,
+                0.965,
+                0.955,
+                0.979
+            ],
+            "angle": 0,
+            "content": "1"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.052,
+                0.042,
+                0.28,
+                0.08
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.112,
+                0.347,
+                0.127
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.138,
+                0.935,
+                0.152
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.162,
+                0.92,
+                0.175
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.181,
+                0.109,
+                0.201
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.054,
+                0.043,
+                0.496,
+                0.079
+            ],
+            "angle": 0,
+            "content": "显示器外观和接口介绍"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.076,
+                0.125,
+                0.362,
+                0.256
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.389,
+                0.126,
+                0.68,
+                0.258
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.713,
+                0.169,
+                0.913,
+                0.256
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.073,
+                0.265,
+                0.94,
+                0.807
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>序列号</td><td>按键功能</td></tr><tr><td>1</td><td>显示器面板</td></tr><tr><td>2</td><td>立柱</td></tr><tr><td>3</td><td>底座</td></tr><tr><td>4</td><td>电源指示灯·开机状态白色常亮。·关机状态熄灭。·睡眠状态白色闪烁。</td></tr><tr><td>5</td><td>电源键开启关闭显示器。</td></tr><tr><td>6</td><td>功能键调节显示器设置。详细内容,请查看《显示器开关机及 OSD 菜单设置》章节。</td></tr><tr><td>7</td><td>HDMI 接口连接 HDMI 输入设备,如计算机。</td></tr><tr><td>8</td><td>VGA 接口连接 VGA 输入设备,如计算机。</td></tr><tr><td>9</td><td>耳机接口连接耳机。</td></tr><tr><td>10</td><td>电源接口连接电源适配器,给显示器供电。</td></tr></table>"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "2"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.056,
+                0.044,
+                0.495,
+                0.078
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.053,
+                0.043,
+                0.408,
+                0.078
+            ],
+            "angle": 0,
+            "content": "安装与拆卸显示器"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.11,
+                0.121,
+                0.129
+            ],
+            "angle": 0,
+            "content": "安装",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.106,
+                0.147,
+                0.714,
+                0.469
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.528,
+                0.791,
+                0.548
+            ],
+            "angle": 0,
+            "content": "1 缓冲泡沫箭头朝上水平放置纸箱，打开纸箱包装，将整机和缓冲泡沫一起取出。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.555,
+                0.37,
+                0.573
+            ],
+            "angle": 0,
+            "content": "2 从缓冲泡沫中取出立柱和底座。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.581,
+                0.941,
+                0.622
+            ],
+            "angle": 0,
+            "content": "3 将立柱上端插入显示器背部的卡槽，听到咔哒声表示已安装好。然后将底座安装到立柱下端，听到咔哒声表示已安装好。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.629,
+                0.794,
+                0.649
+            ],
+            "angle": 0,
+            "content": "4 将组装好的显示器用双手托起，立在平整的桌面上，可根据需要调整俯仰角度。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.655,
+                0.12,
+                0.674
+            ],
+            "angle": 0,
+            "content": "拆卸",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.089,
+                0.71,
+                0.711,
+                0.916
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "image_footnote",
+            "bbox": [
+                0.07,
+                0.94,
+                0.916,
+                0.959
+            ],
+            "angle": 0,
+            "content": "拆卸立柱：一只手按住显示器背部的快拆按钮，同时另外一只手向下拔出立柱，即可拆卸立柱。"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "3"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.054,
+                0.043,
+                0.409,
+                0.079
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.106,
+                0.12,
+                0.133
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.531,
+                0.786,
+                0.546
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.557,
+                0.365,
+                0.572
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.582,
+                0.938,
+                0.598
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.606,
+                0.286,
+                0.62
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.632,
+                0.79,
+                0.647
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.655,
+                0.118,
+                0.677
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.804,
+                0.021,
+                0.956,
+                0.037
+            ],
+            "angle": 0,
+            "content": "安装与拆卸显示器"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.044,
+                0.943,
+                0.086
+            ],
+            "angle": 0,
+            "content": "拆卸底座：一只手向内拨动底部的快拆拨片，同时另外一只手握住立柱向外顶出底座，即可拆卸底座。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.966,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "4"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.045,
+                0.938,
+                0.061
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.067,
+                0.109,
+                0.086
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.054,
+                0.043,
+                0.583,
+                0.078
+            ],
+            "angle": 0,
+            "content": "显示器连接至计算机等设备"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.183,
+                0.149,
+                0.77,
+                0.318
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.38,
+                0.932,
+                0.418
+            ],
+            "angle": 0,
+            "content": "1 将 HDMI 线缆或 VGA 线缆—端接入显示器的 HDMI 接口或 VGA 接口，另一端接入计算机的 HDMI 接口或 VGA 接口。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.424,
+                0.923,
+                0.462
+            ],
+            "angle": 0,
+            "content": "2 将显示器和计算机的电源线等其他线缆连接好后开机，显示器屏幕上显示计算机的屏幕画面，代表连线成功。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.957,
+                0.979
+            ],
+            "angle": 0,
+            "content": "5"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.057,
+                0.044,
+                0.581,
+                0.077
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.381,
+                0.929,
+                0.398
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.103,
+                0.401,
+                0.364,
+                0.416
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.425,
+                0.92,
+                0.442
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.101,
+                0.444,
+                0.233,
+                0.459
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.054,
+                0.043,
+                0.667,
+                0.078
+            ],
+            "angle": 0,
+            "content": "显示器开关机及 OSD 菜单设置"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.144,
+                0.147,
+                0.644,
+                0.38
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.07,
+                0.422,
+                0.249,
+                0.441
+            ],
+            "angle": 0,
+            "content": "开启与关闭显示器："
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.446,
+                0.892,
+                0.465
+            ],
+            "angle": 0,
+            "content": "- 开机：短按电源键（按键5），显示器屏幕显示品牌Logo后，指示灯点亮，显示器开启。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.076,
+                0.47,
+                0.935,
+                0.511
+            ],
+            "angle": 0,
+            "content": "显示器工作时，指示灯点亮；显示器无信号输入时，进入待机状态，若菜单中 LED 电源按钮设置为“待机模式时开”，待机状态下指示灯白色闪烁。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.516,
+                0.692,
+                0.536
+            ],
+            "angle": 0,
+            "content": "· 关机：长按电源键（按键 5）2 秒以上，指示灯熄灭，显示器关机。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.544,
+                0.229,
+                0.563
+            ],
+            "angle": 0,
+            "content": "设置显示器菜单："
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.574,
+                0.642,
+                0.593
+            ],
+            "angle": 0,
+            "content": "1 显示器开机后，短按任意功能键，即可打开显示器设置菜单。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.6,
+                0.669,
+                0.62
+            ],
+            "angle": 0,
+            "content": "2 在设置菜单界面，根据界面提示按 1~5 键，调节显示器的设置。",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.102,
+                0.62,
+                0.938,
+                0.928
+            ],
+            "angle": 0,
+            "content": "<table><tr><td rowspan=\"2\">物理按键</td><td colspan=\"2\">快捷菜单</td><td colspan=\"2\">主菜单</td></tr><tr><td>图示</td><td>说明</td><td>图示</td><td>说明</td></tr><tr><td>按键1</td><td><img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABJAEIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2jwr/AMifon/XhB/6LWtesjwr/wAifon/AF4Qf+i1rXoAKKK808Z+Prz/AISPT/DHhKQyaq1yjXUixrIkcfdGBHvkkEEY680BY9Lopqbti7yC+BuKjAz7U6gAooooAKKKKAMjwr/yJ+if9eEH/ota16yPCv8AyJ+if9eEH/otayfiB40tfB3h+aXzl/tKZCtnDjcWfsSMj5R3oAyPif41k0ezj0LRbgf29fMqIqLuMSHgscdD6cH6VqeAfAVp4N04u5Fzq1z811dtySeu1c9B+pPJ7AY/w28CtYxr4o16RrvXr9RMWlBzAGGcYI+968cdB0zXpFIb7BRRRTEFFFFABRRRQByUeuweGvhXZ6xccpbaXAyqQfmcoqovAOMsQM9s14TofjrS5fFc3iTxfb3mo3gbNtDEqmKL04Zh07Cvofw9bQ3ngbSba5iSWCXToUkjcZDAxjIIryzUNLvfhB4gOp2MBvfC15IBPCwBMJJ45PQ+h79KTKRqf8NA+Hf+gVqn5R//ABVH/DQPh3/oFap+Uf8A8VXqNulhd20VxbpbywyqHjkRQVZSMgg9xUn2S2/594v++BQLQ8q/4aB8O/8AQK1T8o//AIqj/hoHw7/0CtU/KP8A+Kr1X7Jbf8+8X/fAo+yW3/PvF/3wKA0PKv8AhoHw7/0CtU/KP/4qui8GfFHSvG2sTabY2V7BLFbmctOF2kBlXHBPPzCuz+yW3/PvF/3wKckEMTbo4kQ4xlVAoDQkooopiMjwr/yJ+if9eEH/AKLWrGs6NY6/pU+m6jAs1tMuGU9vQg9iOxqv4V/5E/RP+vCD/wBFrWvQB4zoVzqvwp8UQeHNUm+0eG76U/Y7qRsCInnr268j1OR1r2UEEAg5B6EVheLvCWneMdFfT79MMMtDMo+aJvUH+Y71wfgfxJrHhXxBH4E8Uq0mcjTr09HQZwpJ6jjjuOnphD3PWqKKKYgooooAKKKKAMjwr/yJ+if9eEH/AKLWtesjwr/yJ+if9eEH/ota16ACud8U+C9J8XmwbUvtCyWMvmwyQSbG7ZU9eDgdOeOCK6KigBqII0VFztUADJz+tOoooAKKKKACiiigD//Z\"/></td><td>退出快捷菜单</td><td><img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABJAEIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2LwV/yIfh3/sGW3/opa3awvBX/Ih+Hf8AsGW3/opa3aACiivNPGfj68/4SPT/AAx4SkMmqtco11IsayJHH3RgR75JBBGOvNAWPS6Kam7Yu8gvgbiowM+1OoAKKKKACiiigDC8Ff8AIh+Hf+wZbf8Aopa3awvBX/Ih+Hf+wZbf+ilrP+IHjS18HeH5pfOX+0pkK2cONxZ+xIyPlHegDI+J/jWTR7OPQtFuB/b18yoiou4xIeCxx0PpwfpWp4B8BWng3Ti7kXOrXPzXV23JJ67Vz0H6k8nsBj/DbwK1jGvijXpGu9ev1ExaUHMAYZxgj73rxx0HTNekUhvsFFFFMQUUUUAFFFFAHGWGuweGvg9pmsXHKW2j2zKpB+ZzGiovAOMsQM9s14fofjrS5fFc3iTxfb3mo3gbNtDEqmKL04Zh07CvoHwnbQ3nw60K2uYklgl0q3SSNxkMDEuQRXmWoaXe/CDxAdTsYDe+FryQCeFgCYSTxyeh9D36UmUjU/4aB8O/9ArVPyj/APiqP+GgfDv/AECtU/KP/wCKr1G3Swu7aK4t0t5YZVDxyIoKspGQQe4qT7Jbf8+8X/fAoFoeVf8ADQPh3/oFap+Uf/xVH/DQPh3/AKBWqflH/wDFV6r9ktv+feL/AL4FH2S2/wCfeL/vgUBoeVf8NA+Hf+gVqn5R/wDxVdF4M+KOleNtYm02xsr2CWK3M5acLtIDKuOCefmFdn9ktv8An3i/74FOSCGJt0cSIcYyqgUBoSUUUUxGF4K/5EPw7/2DLb/0UtXtZ0ax1/Sp9N1GBZraZcMp7ehB7EdjVHwV/wAiH4d/7Blt/wCilrdoA8Z0K51X4U+KIPDmqTfaPDd9Kfsd1I2BETz17deR6nI617KCCAQcg9CKwvF3hLTvGOivp9+mGGWhmUfNE3qD/Md64PwP4k1jwr4gj8CeKVaTORp16ejoM4Uk9Rxx3HT0wh7nrVFFFMQUUUUAFFFFAGF4K/5EPw7/ANgy2/8ARS1u1heCv+RD8O/9gy2/9FLW7QAVzvinwXpPi82Dal9oWSxl82GSCTY3bKnrwcDpzxwRXRUUANRBGioudqgAZOf1p1FFABRRRQAUUUUAf//Z\"/></td><td>左移</td></tr><tr><td>按键2</td><td></td><td>快捷键功能快速进入亮度设置菜单界面</td><td>↑</td><td>上移</td></tr><tr><td>按键3</td><td></td><td>快捷键功能快速进入情景模式设置菜单界面</td><td>[ DYD]</td><td>下移</td></tr><tr><td>按键4</td><td></td><td>进入主菜单</td><td>→</td><td>右移</td></tr><tr><td>按键5</td><td></td><td>关机</td><td>√</td><td>确认</td></tr></table>"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.957,
+                0.979
+            ],
+            "angle": 0,
+            "content": "6"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.057,
+                0.045,
+                0.666,
+                0.078
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.423,
+                0.245,
+                0.442
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.446,
+                0.889,
+                0.465
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.077,
+                0.472,
+                0.934,
+                0.488
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.111,
+                0.495,
+                0.606,
+                0.51
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.519,
+                0.687,
+                0.534
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.544,
+                0.226,
+                0.564
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.574,
+                0.64,
+                0.593
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.602,
+                0.665,
+                0.619
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.055,
+                0.044,
+                0.365,
+                0.077
+            ],
+            "angle": 0,
+            "content": "显示器菜单选项"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.076,
+                0.11,
+                0.71,
+                0.13
+            ],
+            "angle": 0,
+            "content": "i 不同型号、不同版本的显示器、菜单选项存在差异，请以实际为准。",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.074,
+                0.137,
+                0.939,
+                0.876
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>一级菜单</td><td>二级菜单</td><td>描述</td></tr><tr><td rowspan=\"6\">情景模式</td><td>P3色彩</td><td>浏览P3广色域图片或喜好鲜艳色彩的人士,建议选择P3色彩。</td></tr><tr><td>sRGB色彩</td><td>浏览计算机中的图片时,建议选择sRGB色彩。</td></tr><tr><td>HDR色彩</td><td>调色模拟HDR视频色彩效果,建议观赏影视场景使用。</td></tr><tr><td>游戏</td><td>游戏效果增强,建议游戏场景使用。</td></tr><tr><td>电子书</td><td>模拟纸质书籍效果,建议阅读场景使用。</td></tr><tr><td>用户</td><td>用户自定义显示效果。</td></tr><tr><td rowspan=\"7\">显示</td><td>亮度</td><td>设置范围为0-100。</td></tr><tr><td>对比度</td><td>设置范围为0-100。i 此功能仅在用户/sRGB色彩/P3色彩模式下且关闭护眼模式,才可使用。</td></tr><tr><td>锐利度</td><td>设置范围为0-100。</td></tr><tr><td>六色</td><td>可单独设置红色、绿色、蓝色、青色、品红色、黄色的色调与饱和度,设置范围为0-100。i 此功能仅在用户模式,才可使用。</td></tr><tr><td>护眼</td><td>可开启或关闭护眼模式。i 长期阅读时,建议开启护眼模式,预防用眼疲劳,使眼睛更加舒服。开启护眼模式后,屏幕显示偏黄为正常现象。此功能仅在用户/sRGB色彩/P3色彩模式下才可使用,其余的情景模式下护眼模式默认为关。</td></tr><tr><td>色温</td><td>可设置为冷色、中性色、标准色、暖色模式的一种。或者在用户自定义选项中,对红、绿、蓝颜色分别设置,设置数值为0-100。i 此功能仅在用户/sRGB色彩/P3色彩模式下且关闭护眼模式,才可使用。</td></tr><tr><td>缩放</td><td>可选择满屏或等比缩放。</td></tr></table>"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "7"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.055,
+                0.044,
+                0.366,
+                0.079
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.111,
+                0.708,
+                0.128
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.822,
+                0.021,
+                0.957,
+                0.037
+            ],
+            "angle": 0,
+            "content": "显示器菜单选项"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.074,
+                0.039,
+                0.94,
+                0.911
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>一级菜单</td><td>二级菜单</td><td>描述</td></tr><tr><td></td><td>VGA 设置</td><td>可设置 VGA 信号的水平位置、垂直位置、时钟、相位,设置数值为 0-100。或者可使用自动调整功能,自动设置 VGA 信号的水平位置、垂直位置、时钟、相位数值。i 此功能仅在连接 VGA 信号时,才可使用。</td></tr><tr><td rowspan=\"2\"><img src=\"data:image/jpeg;base64,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\"/>输入源</td><td>HDMI</td><td rowspan=\"2\">连接其他设备时,根据连接线缆,选择对应的输入源。</td></tr><tr><td>VGA</td></tr><tr><td rowspan=\"3\"><img src=\"data:image/jpeg;base64,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\"/>游戏辅助</td><td>刷新率</td><td>在游戏场景中,可以在此菜单中进行一些辅助设置。开启后,可选择在屏幕左上角或右上角显示刷新率。</td></tr><tr><td>游戏准星</td><td>开启后,在屏幕上显示准星。并可将准星颜色设置为红色或绿色,也可对准星位置重置。</td></tr><tr><td>响应时间</td><td>可开启或关闭响应时间。开启时,可选择标准、快、极快等响应时间。</td></tr><tr><td rowspan=\"2\"><img src=\"data:image/jpeg;base64,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\"/>快捷键</td><td>上</td><td>OSD 快捷菜单上方的设置选项,默认为亮度,可设置为情景模式、响应时间、输入源、对比度等选项。</td></tr><tr><td>下</td><td>OSD 快捷菜单下方的设置选项,默认为情景模式,可设置为亮度、响应时间、输入源、对比度等选项。</td></tr><tr><td rowspan=\"9\"><img src=\"data:image/jpeg;base64,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\"/>设置</td><td>音量</td><td>可设置音量大小设置数值为 0-100。i 此功能仅在连接 HDMI 信号时,才可使用。</td></tr><tr><td>语言</td><td>可设置为简体中文、英语。</td></tr><tr><td rowspan=\"2\">菜单显示设置</td><td>菜单透明度:可设置菜单的显示透明度,设置数值为 1-8,数字越大透明度越高。</td></tr><tr><td>菜单显示时间:可将菜单显示时间设置为 10-100 秒。</td></tr><tr><td rowspan=\"2\">LED 电源按钮</td><td>待机模式时开:待机状态下,显示器的指示灯白色闪烁。</td></tr><tr><td>待机模式时关:待机状态下,显示器的指示灯熄灭。</td></tr><tr><td>信息</td><td>可查看显示器的 SN 号、固件版本号、情景模式、分辨率、刷新率、输入源等信息。</td></tr><tr><td>ECO Mode</td><td>选择开启或关闭节能模式。i 此功能默认关闭,打开后会减少能耗。开启节能模式后,亮度等选项将无法设置。</td></tr><tr><td>恢复出厂设置</td><td>选择是否将显示器菜单恢复出厂设置。</td></tr></table>",
+            "cell_merge": [
+                1,
+                1,
+                1
+            ]
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "8"
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.053,
+                0.042,
+                0.366,
+                0.079
+            ],
+            "angle": 0,
+            "content": "支持的显示模式"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.109,
+                0.181,
+                0.129
+            ],
+            "angle": 0,
+            "content": "最大分辨率",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.136,
+                0.366,
+                0.156
+            ],
+            "angle": 0,
+            "content": "1920 x 1080 @ 75 Hz(HDMI)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.161,
+                0.356,
+                0.183
+            ],
+            "angle": 0,
+            "content": "1920 x 1080 @ 75 Hz(VGA)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.187,
+                0.182,
+                0.208
+            ],
+            "angle": 0,
+            "content": "推荐分辨率",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.214,
+                0.366,
+                0.235
+            ],
+            "angle": 0,
+            "content": "1920 x 1080 @ 60 Hz(HDMI)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.24,
+                0.356,
+                0.26
+            ],
+            "angle": 0,
+            "content": "1920 x 1080 @ 60 Hz(VGA)",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.072,
+                0.262,
+                0.94,
+                0.921
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>分辨率</td><td>HDMI刷新率</td><td>VGA刷新率</td></tr><tr><td>640 x 480</td><td>60Hz</td><td>60Hz</td></tr><tr><td>640 x 480</td><td>67Hz</td><td>67Hz</td></tr><tr><td>640 x 480</td><td>72Hz</td><td>72Hz</td></tr><tr><td>640 x 480</td><td>75Hz</td><td>75Hz</td></tr><tr><td>720 x 400</td><td>70Hz</td><td>70Hz</td></tr><tr><td>800 x 600</td><td>56Hz</td><td>56Hz</td></tr><tr><td>800 x 600</td><td>60Hz</td><td>60Hz</td></tr><tr><td>800 x 600</td><td>72Hz</td><td>72Hz</td></tr><tr><td>800 x 600</td><td>75Hz</td><td>75Hz</td></tr><tr><td>832 x 624</td><td>75Hz</td><td>75Hz</td></tr><tr><td>1024 x 768</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1024 x 768</td><td>70Hz</td><td>70Hz</td></tr><tr><td>1024 x 768</td><td>75Hz</td><td>75Hz</td></tr><tr><td>1280 x 1024</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1280 x 1024</td><td>75Hz</td><td>75Hz</td></tr><tr><td>1280 x 720</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1280 x 960</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1440 x 900</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1680 x 1050</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1920 x 1080</td><td>60Hz</td><td>60Hz</td></tr><tr><td>1920 x 1080</td><td>75Hz</td><td>75Hz</td></tr></table>"
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.941,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "9"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.056,
+                0.044,
+                0.365,
+                0.079
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.108,
+                0.179,
+                0.13
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.139,
+                0.363,
+                0.156
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.165,
+                0.351,
+                0.181
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.188,
+                0.178,
+                0.208
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.217,
+                0.363,
+                0.234
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.241,
+                0.353,
+                0.26
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.055,
+                0.044,
+                0.233,
+                0.077
+            ],
+            "angle": 0,
+            "content": "常见问题"
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.11,
+                0.16,
+                0.129
+            ],
+            "angle": 0,
+            "content": "无法开机"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.134,
+                0.366,
+                0.152
+            ],
+            "angle": 0,
+            "content": "- 检查显示器是否处于开机状态。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.16,
+                0.507,
+                0.178
+            ],
+            "angle": 0,
+            "content": "- 检查电源线是否正确连接到显示器和电源插座。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.072,
+                0.187,
+                0.201,
+                0.206
+            ],
+            "angle": 0,
+            "content": "屏幕上无图像"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.212,
+                0.346,
+                0.23
+            ],
+            "angle": 0,
+            "content": "- 检查所有线缆是否正确连接。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.236,
+                0.508,
+                0.255
+            ],
+            "angle": 0,
+            "content": "- 检查显示器和计算机主机是否均处于开机状态。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.263,
+                0.472,
+                0.28
+            ],
+            "angle": 0,
+            "content": "- 检查 VGA/HDMI 等信号线是否出现损坏。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.288,
+                0.649,
+                0.307
+            ],
+            "angle": 0,
+            "content": "- 如果无上述问题，则重启设备，查看屏幕是否可正常显示图像。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.319,
+                0.221,
+                0.337
+            ],
+            "angle": 0,
+            "content": "屏幕太亮或太暗"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.343,
+                0.548,
+                0.362
+            ],
+            "angle": 0,
+            "content": "- 打开显示器设置菜单，调节屏幕显示亮度和对比度。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.371,
+                0.241,
+                0.389
+            ],
+            "angle": 0,
+            "content": "屏幕颜色显示异常"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.395,
+                0.593,
+                0.413
+            ],
+            "angle": 0,
+            "content": "- 检查 VGA/HDMI 等信号线是否出现损坏，如插针弯曲。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.42,
+                0.388,
+                0.439
+            ],
+            "angle": 0,
+            "content": "- 打开显示器设置菜单，调整色温。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.931,
+                0.965,
+                0.957,
+                0.98
+            ],
+            "angle": 0,
+            "content": "10"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.052,
+                0.041,
+                0.238,
+                0.08
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.111,
+                0.158,
+                0.134
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.135,
+                0.365,
+                0.152
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.161,
+                0.505,
+                0.177
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.188,
+                0.198,
+                0.207
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.213,
+                0.343,
+                0.228
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.238,
+                0.505,
+                0.254
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.263,
+                0.468,
+                0.28
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.289,
+                0.646,
+                0.306
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.318,
+                0.218,
+                0.339
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.345,
+                0.545,
+                0.36
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.372,
+                0.237,
+                0.389
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.395,
+                0.59,
+                0.413
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.422,
+                0.384,
+                0.438
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.054,
+                0.043,
+                0.233,
+                0.077
+            ],
+            "angle": 0,
+            "content": "安全信息"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.112,
+                0.941,
+                0.154
+            ],
+            "angle": 0,
+            "content": "⚠️【警告】在使用和操作设备前，为确保设备性能最佳，并避免出现危险或非法情况，请查阅并遵循所有的安全信息。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.168,
+                0.16,
+                0.186
+            ],
+            "angle": 0,
+            "content": "电子设备"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.193,
+                0.926,
+                0.236
+            ],
+            "angle": 0,
+            "content": "有明文规定禁止使用无线设备的场所，请勿使用本设备，否则会干扰其它电子设备或导致其它危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.07,
+                0.25,
+                0.241,
+                0.268
+            ],
+            "angle": 0,
+            "content": "对医疗设备的影响"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.274,
+                0.852,
+                0.293
+            ],
+            "angle": 0,
+            "content": "· 在明文规定禁止使用无线设备的医疗和保健场所，请遵守该场所的规定，并关闭设备。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.298,
+                0.94,
+                0.362
+            ],
+            "angle": 0,
+            "content": "- 设备产生的无线电波或含有磁铁可能会影响植入式医疗设备或个人医用设备的正常工作，如起搏器、植入耳蜗、助听器等。若您使用了这些医用设备，请向其制造商咨询使用本设备的限制条件。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.368,
+                0.906,
+                0.387
+            ],
+            "angle": 0,
+            "content": "- 在使用本设备时，请与植入的医疗设备（如起搏器、植入耳蜗等）保持至少15厘米的距离。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.403,
+                0.201,
+                0.421
+            ],
+            "angle": 0,
+            "content": "易燃易爆区域"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.427,
+                0.941,
+                0.491
+            ],
+            "angle": 0,
+            "content": "- 在加油站（维修站）或靠近易燃物品、化学制剂等任何易燃易爆区域，请勿使用本设备，并遵守所有图形或文字的指示。在燃油或化学制剂存放和运输区或易爆场所内或周围，设备可能引起爆炸或起火。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.496,
+                0.791,
+                0.515
+            ],
+            "angle": 0,
+            "content": "- 请勿将设备及其配件与易燃液体、气体或易爆物品放在同一箱子中存放或运输。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.07,
+                0.53,
+                0.161,
+                0.549
+            ],
+            "angle": 0,
+            "content": "操作环境"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.555,
+                0.83,
+                0.574
+            ],
+            "angle": 0,
+            "content": "· 请勿在多灰、潮湿、肮脏或靠近磁场的地方使用设备，以免引起设备内部电路故障。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.58,
+                0.811,
+                0.599
+            ],
+            "angle": 0,
+            "content": "- 插拔设备线缆前，请先停止使用设备并断开电源。在插拔线缆时请保持双手干燥。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.605,
+                0.791,
+                0.624
+            ],
+            "angle": 0,
+            "content": "- 雷电天气请断开电源，并拔出连接在设备上的所有线缆，以免设备遭雷击损坏。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.631,
+                0.711,
+                0.65
+            ],
+            "angle": 0,
+            "content": "- 请勿在雷雨天气使用本设备。雷雨天气可能导致设备故障或电击危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.656,
+                0.937,
+                0.698
+            ],
+            "angle": 0,
+            "content": "- 请在介于 \\(0^{\\circ} \\mathrm{C} \\sim 35^{\\circ} \\mathrm{C}\\) 的环境温度中使用本产品，在介于 \\(-10^{\\circ} \\mathrm{C} \\sim +45^{\\circ} \\mathrm{C}\\) 的环境温度中存储本产品。当环境温度过高或过低时，可能引起产品故障。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.703,
+                0.67,
+                0.722
+            ],
+            "angle": 0,
+            "content": "- 请避免设备及其配件雨淋或受潮，否则可能导致火灾或触电危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.728,
+                0.942,
+                0.769
+            ],
+            "angle": 0,
+            "content": "- 请勿将设备靠近热源或裸露的火源，如电暖器、微波炉、烤箱、热水器、炉火、蜡烛或其他可能产生高温的地方。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.775,
+                0.942,
+                0.816
+            ],
+            "angle": 0,
+            "content": "- 设备在运行一段时间后，设备温度会升高。如果设备温度过高，请勿长时间接触，否则可能导致低温烫伤，引起皮肤红肿或色素沉淀。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.821,
+                0.811,
+                0.84
+            ],
+            "angle": 0,
+            "content": "- 请勿让儿童或宠物吞咬设备或其配件，以免对其造成伤害或导致设备故障或爆炸。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.847,
+                0.942,
+                0.888
+            ],
+            "angle": 0,
+            "content": "- 当不断重复同一动作时（例如玩游戏），您的手、臂、腕、肩、颈或其他身体部位可能会偶尔感觉不适。如果您感觉到不适，请停止使用并咨询医师。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.893,
+                0.942,
+                0.935
+            ],
+            "angle": 0,
+            "content": "- 请勿在设备上放置任何物体（如蜡烛、盛水容器等），若有异物或液体进入设备，请立刻停止使用并断开电源，拔出连接在设备上的所有线缆，并联系华为客户服务中心。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.932,
+                0.965,
+                0.955,
+                0.98
+            ],
+            "angle": 0,
+            "content": "11"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.051,
+                0.042,
+                0.235,
+                0.08
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.113,
+                0.937,
+                0.129
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.137,
+                0.245,
+                0.15
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.163,
+                0.16,
+                0.19
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.196,
+                0.921,
+                0.211
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.216,
+                0.108,
+                0.236
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.25,
+                0.237,
+                0.269
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.276,
+                0.848,
+                0.291
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.302,
+                0.935,
+                0.313
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.324,
+                0.917,
+                0.338
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.087,
+                0.343,
+                0.127,
+                0.364
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.37,
+                0.902,
+                0.385
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.404,
+                0.197,
+                0.421
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.429,
+                0.936,
+                0.442
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.452,
+                0.936,
+                0.466
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.089,
+                0.473,
+                0.183,
+                0.49
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.498,
+                0.786,
+                0.513
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.07,
+                0.528,
+                0.159,
+                0.551
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.557,
+                0.827,
+                0.571
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.582,
+                0.808,
+                0.597
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.608,
+                0.787,
+                0.623
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.634,
+                0.705,
+                0.648
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.658,
+                0.933,
+                0.673
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.091,
+                0.681,
+                0.545,
+                0.696
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.706,
+                0.665,
+                0.719
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.731,
+                0.937,
+                0.744
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.091,
+                0.753,
+                0.241,
+                0.767
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.777,
+                0.937,
+                0.792
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.093,
+                0.8,
+                0.422,
+                0.814
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.823,
+                0.807,
+                0.839
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.848,
+                0.938,
+                0.864
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.091,
+                0.871,
+                0.564,
+                0.886
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.894,
+                0.937,
+                0.909
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.918,
+                0.746,
+                0.932
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.877,
+                0.021,
+                0.956,
+                0.037
+            ],
+            "angle": 0,
+            "content": "安全信息"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.068,
+                0.043,
+                0.937,
+                0.086
+            ],
+            "angle": 0,
+            "content": "【稳定性危险】本设备可能翻倒，造成严重人身伤害或死亡。采取诸如以下的简单的预防措施就能避免许多伤害，特别是对儿童的伤害：",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.09,
+                0.449,
+                0.109
+            ],
+            "angle": 0,
+            "content": "- 始终使用设备制造商建议的柜子或支架。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.115,
+                0.812,
+                0.134
+            ],
+            "angle": 0,
+            "content": "- 始终使用能安全支撑本设备的家具，始终确保本设备没有伸出该支撑家具的边缘。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.141,
+                0.877,
+                0.16
+            ],
+            "angle": 0,
+            "content": "- 请勿将本设备放在不稳定的位置，请勿将本设备放置在高的家具（例如橱柜或书柜）上。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.166,
+                0.718,
+                0.186
+            ],
+            "angle": 0,
+            "content": "- 始终规划好连接到本设备上的电线和电缆，这样它们就不会被绊或拉。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.192,
+                0.731,
+                0.211
+            ],
+            "angle": 0,
+            "content": "- 请勿将本设备置于可能铺在本设备和支撑家具之间的织物或其他材料上。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.217,
+                0.591,
+                0.236
+            ],
+            "angle": 0,
+            "content": "· 始终教育儿童攀爬家具到达本设备或其控制装置的危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.242,
+                0.892,
+                0.262
+            ],
+            "angle": 0,
+            "content": "· 在本设备或放置本设备的家具顶部，请勿放置可能引诱儿童攀爬的物品，如玩具和遥控器。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.268,
+                0.596,
+                0.288
+            ],
+            "angle": 0,
+            "content": "- 如果设备需要保留并更换位置，也应考虑上述注意事项。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.303,
+                0.161,
+                0.322
+            ],
+            "angle": 0,
+            "content": "儿童健康"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.327,
+                0.942,
+                0.369
+            ],
+            "angle": 0,
+            "content": "- 本设备及其配件可能包含一些小零件，请将设备及其配件放置在儿童接触不到的地方。儿童可能在无意之中损坏本设备及其配件，或吞下小零件导致窒息或其他危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.373,
+                0.529,
+                0.393
+            ],
+            "angle": 0,
+            "content": "- 本设备并非玩具，儿童应在成人监护下使用设备。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.07,
+                0.408,
+                0.161,
+                0.428
+            ],
+            "angle": 0,
+            "content": "配件要求"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.432,
+                0.811,
+                0.452
+            ],
+            "angle": 0,
+            "content": "- 使用未经认可或不兼容的电源、充电器或电池，可能引发火灾、爆炸或其他危险。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.457,
+                0.943,
+                0.523
+            ],
+            "angle": 0,
+            "content": "- 只能使用设备制造商认可且与此型号设备配套的配件。如果使用其他类型的配件，可能违反本设备的保修条款以及本设备所处国家的相关规定，并可能导致安全事故。如需获取认可的配件，请与华为客户服务中心联系。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.07,
+                0.536,
+                0.161,
+                0.555
+            ],
+            "angle": 0,
+            "content": "电源安全"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.56,
+                0.368,
+                0.579
+            ],
+            "angle": 0,
+            "content": "- 电源插头作为断开电源的装置。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.586,
+                0.469,
+                0.605
+            ],
+            "angle": 0,
+            "content": "- 电源插座应安装在设备附近并应易于触及。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.611,
+                0.771,
+                0.631
+            ],
+            "angle": 0,
+            "content": "- 当不使用本设备时，请断开电源与设备的连接并从电源插座上拔掉电源插头。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.636,
+                0.69,
+                0.656
+            ],
+            "angle": 0,
+            "content": "- 若电源插头或电源线已损坏，请勿继续使用，以免发生触电或火灾。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.662,
+                0.611,
+                0.681
+            ],
+            "angle": 0,
+            "content": "- 请勿用湿手触碰电源线，或用拉电源线缆的方式拔出电源。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.687,
+                0.65,
+                0.707
+            ],
+            "angle": 0,
+            "content": "- 请勿用湿手触摸设备或电源，以免发生设备短路、故障或触电。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.722,
+                0.181,
+                0.741
+            ],
+            "angle": 0,
+            "content": "维护和保养"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.746,
+                0.831,
+                0.766
+            ],
+            "angle": 0,
+            "content": "- 不建议您自行升级部件或更换模块。如有相关服务需求，请联系华为客户服务中心。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.772,
+                0.871,
+                0.791
+            ],
+            "angle": 0,
+            "content": "- 请保持设备及其配件干燥。请勿使用微波炉或吹风机等外部加热设备对其进行干燥处理。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.797,
+                0.852,
+                0.817
+            ],
+            "angle": 0,
+            "content": "- 请勿在温度过高或过低区域放置设备及其配件，否则可能导致设备故障、着火或爆炸。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.823,
+                0.852,
+                0.842
+            ],
+            "angle": 0,
+            "content": "- 请勿使设备及其配件受到强烈的冲击或震动，以免损坏设备及其配件，导致设备故障。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.848,
+                0.892,
+                0.868
+            ],
+            "angle": 0,
+            "content": "- 清洁和维护前，请停止使用本设备，关闭所有应用，并断开与其他设备的所有连接或线缆。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.874,
+                0.942,
+                0.915
+            ],
+            "angle": 0,
+            "content": "- 请勿使用烈性化学制品、清洗剂或强洗涤剂清洁设备或其配件。请使用清洁、干燥的软布擦拭设备或其配件。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.92,
+                0.912,
+                0.94
+            ],
+            "angle": 0,
+            "content": "- 请勿将磁条卡（例如银行卡、电话卡等）长期接触本设备，否则可能导致磁条卡被磁场损坏。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.931,
+                0.965,
+                0.957,
+                0.98
+            ],
+            "angle": 0,
+            "content": "12"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.045,
+                0.931,
+                0.061
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.069,
+                0.405,
+                0.083
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.092,
+                0.444,
+                0.107
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.117,
+                0.807,
+                0.133
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.144,
+                0.872,
+                0.159
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.17,
+                0.709,
+                0.182
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.195,
+                0.724,
+                0.208
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.221,
+                0.584,
+                0.234
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.245,
+                0.888,
+                0.26
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.272,
+                0.59,
+                0.285
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.302,
+                0.158,
+                0.323
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.33,
+                0.937,
+                0.344
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.352,
+                0.705,
+                0.366
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.377,
+                0.524,
+                0.39
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.406,
+                0.158,
+                0.429
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.434,
+                0.808,
+                0.45
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.46,
+                0.936,
+                0.473
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.484,
+                0.937,
+                0.497
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.506,
+                0.323,
+                0.52
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.07,
+                0.531,
+                0.161,
+                0.558
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.563,
+                0.363,
+                0.577
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.589,
+                0.463,
+                0.602
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.613,
+                0.766,
+                0.629
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.64,
+                0.683,
+                0.652
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.664,
+                0.605,
+                0.679
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.691,
+                0.644,
+                0.704
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.07,
+                0.719,
+                0.18,
+                0.743
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.748,
+                0.828,
+                0.764
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.776,
+                0.867,
+                0.788
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.799,
+                0.847,
+                0.814
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.826,
+                0.848,
+                0.841
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.852,
+                0.887,
+                0.865
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.877,
+                0.937,
+                0.891
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.091,
+                0.9,
+                0.203,
+                0.913
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.922,
+                0.907,
+                0.938
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.878,
+                0.022,
+                0.957,
+                0.037
+            ],
+            "angle": 0,
+            "content": "安全信息"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.071,
+                0.041,
+                0.942,
+                0.083
+            ],
+            "angle": 0,
+            "content": "- 如果设备碰撞硬物或设备受到外界的强烈撞击造成破碎，切勿触摸或试图移除破碎的部分，请立即停止使用并及时联系华为客户服务中心。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.097,
+                0.16,
+                0.115
+            ],
+            "angle": 0,
+            "content": "环境保护"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.121,
+                0.529,
+                0.139
+            ],
+            "angle": 0,
+            "content": "- 请勿将本设备及其附件作为普通的生活垃圾处理。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.146,
+                0.609,
+                0.166
+            ],
+            "angle": 0,
+            "content": "- 请遵守本设备及其附件处理的本地法令，并支持回收行动。",
+            "merge_prev": false
+        },
+        {
+            "type": "image_caption",
+            "bbox": [
+                0.072,
+                0.181,
+                0.34,
+                0.199
+            ],
+            "angle": 0,
+            "content": "产品中有害物质的名称及含量"
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.074,
+                0.198,
+                0.933,
+                0.61
+            ],
+            "angle": 0,
+            "content": "<table><tr><td rowspan=\"2\">部件名称</td><td colspan=\"10\">有害物质</td></tr><tr><td>铅(Pb)</td><td>汞(Hg)</td><td>镉(Cd)</td><td>六价铬(Cr(VI))</td><td>多溴联苯(PBB)</td><td>多溴二苯醚(PBDE)</td><td>邻苯二甲酸二(2-乙基)己酯(DEHP)</td><td>邻苯二甲酸丁基苄酯(BBP)</td><td>邻苯二甲酸二正丁酯(DBP)</td><td>邻苯二甲酸二异丁酯(DIBP)</td></tr><tr><td>电路板</td><td>×</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><td>屏幕</td><td>×</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><td>电源适配器</td><td>×</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><td>附件</td><td>×</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td></tr><tr><td colspan=\"11\">本表格依据SJ/T 11364的规定编制。○:表示该有害物质在该部件所有均质材料中的含量均不超出电器电子产品有害物质限制使用国家标准要求。×:表示该有害物质至少在该部件的某一均质材料中含量超出电器电子产品有害物质限制使用国家标准要求,且由于技术性或经济性等因素的局限,法律法规不规定其限量要求或放宽其限量要求的技术应用。因型号不同,产品可能不包括以上部分部件,请以产品实际销售配置为准。</td></tr></table>"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.077,
+                0.615,
+                0.125,
+                0.646
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.134,
+                0.625,
+                0.788,
+                0.644
+            ],
+            "angle": 0,
+            "content": "本标识内数字表示产品及附件在正常使用状态下的环保使用期限为 10 年。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.075,
+                0.649,
+                0.736,
+                0.668
+            ],
+            "angle": 0,
+            "content": "某些部件也可能有环保使用期限标识，其环保使用期限以标识内数字为准。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.931,
+                0.965,
+                0.957,
+                0.98
+            ],
+            "angle": 0,
+            "content": "13"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.044,
+                0.937,
+                0.057
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.092,
+                0.066,
+                0.463,
+                0.08
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.092,
+                0.158,
+                0.118
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.123,
+                0.525,
+                0.138
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.15,
+                0.605,
+                0.163
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.142,
+                0.629,
+                0.785,
+                0.642
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.08,
+                0.652,
+                0.731,
+                0.665
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "bbox": [
+                0.072,
+                0.263,
+                0.29,
+                0.303
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.054,
+                0.044,
+                0.232,
+                0.077
+            ],
+            "angle": 0,
+            "content": "法律声明"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.11,
+                0.56,
+                0.129
+            ],
+            "angle": 0,
+            "content": "版权所有 © 2025 华为终端有限公司。保留一切权利。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.136,
+                0.943,
+                0.224
+            ],
+            "angle": 0,
+            "content": "本手册描述的产品中，可能包含华为及其可能存在的许可人享有版权的软件。除非获得相关权利人的许可，否则，任何人不能以任何形式对前述软件进行复制、分发、修改、摘录、反编译、反汇编、解密、反向工程、出租、转让、分许可等侵犯软件版权的行为，但是适用法律禁止此类限制的除外。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.237,
+                0.159,
+                0.256
+            ],
+            "angle": 0,
+            "content": "商标声明"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.072,
+                0.292,
+                0.27,
+                0.304
+            ],
+            "angle": 0,
+            "content": "HIGH-DEFINITION MULTIMEDIA INTERFACE",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.313,
+                0.938,
+                0.355
+            ],
+            "angle": 0,
+            "content": "HDMI、HDMI High-Definition Multimedia Interface 等词汇、HDMI 商业外观及 HDMI 标识均为 HDMI Licensing Administrator, Inc. 的商标或注册商标。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.362,
+                0.941,
+                0.404
+            ],
+            "angle": 0,
+            "content": "在本手册以及本手册描述的产品中，出现的其他商标、产品名称、服务名称以及公司名称，由其各自的所有人拥有。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.417,
+                0.121,
+                0.436
+            ],
+            "angle": 0,
+            "content": "注意"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.443,
+                0.942,
+                0.531
+            ],
+            "angle": 0,
+            "content": "本手册描述的产品及其附件的某些特性和功能，取决于当地网络的设计和性能，以及您安装的软件。某些特性和功能可能由于当地网络运营商或网络服务供应商不支持，或者由于当地网络的设置，或者您安装的软件不支持而无法实现。因此，本手册中的描述可能与您购买的产品或其附件并非完全一一对应。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.537,
+                0.774,
+                0.557
+            ],
+            "angle": 0,
+            "content": "华为保留随时修改本手册中任何信息的权利，无需提前通知且不承担任何责任。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.571,
+                0.161,
+                0.59
+            ],
+            "angle": 0,
+            "content": "责任限制"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.596,
+                0.941,
+                0.639
+            ],
+            "angle": 0,
+            "content": "本手册中的内容均“按照现状”提供，除非适用法律要求，华为对本手册中的所有内容不提供任何明示或暗示的保证，包括但不限于适销性或者适用于某一特定目的的保证。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.646,
+                0.943,
+                0.71
+            ],
+            "angle": 0,
+            "content": "在适用法律允许的范围内，华为在任何情况下，都不对因使用本手册相关内容及本手册描述的产品而产生的任何特殊的、附带的、间接的、继发性的损害进行赔偿，也不对任何利润、数据、商誉或预期节约的损失进行赔偿。",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.069,
+                0.717,
+                0.942,
+                0.782
+            ],
+            "angle": 0,
+            "content": "在相关法律允许的范围内，在任何情况下，华为对您因为使用本手册描述的产品而遭受的损失的最大责任（除在涉及人身伤害的情况中根据适用的法律规定的损害赔偿外）以您购买本产品所支付的价款为限。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.795,
+                0.181,
+                0.814
+            ],
+            "angle": 0,
+            "content": "进出口管制"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.821,
+                0.942,
+                0.864
+            ],
+            "angle": 0,
+            "content": "若需将本手册描述的产品（包括但不限于产品中的软件及技术数据等）出口、再出口或者进口，您应遵守适用的进出口管制法律法规。",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.071,
+                0.877,
+                0.16,
+                0.896
+            ],
+            "angle": 0,
+            "content": "隐私保护"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.907,
+                0.941,
+                0.953
+            ],
+            "angle": 0,
+            "content": "为了解我们如何保护您的个人信息，请访问 https://consumer.huawei.com/privacy-policy 阅读我们的隐私政策。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.931,
+                0.965,
+                0.956,
+                0.979
+            ],
+            "angle": 0,
+            "content": "14"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.051,
+                0.041,
+                0.236,
+                0.082
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.111,
+                0.556,
+                0.129
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.139,
+                0.937,
+                0.153
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.162,
+                0.921,
+                0.175
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.184,
+                0.936,
+                0.198
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.205,
+                0.128,
+                0.223
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.233,
+                0.158,
+                0.259
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.295,
+                0.267,
+                0.301
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.316,
+                0.934,
+                0.333
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.336,
+                0.672,
+                0.357
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.364,
+                0.934,
+                0.378
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.387,
+                0.226,
+                0.401
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.071,
+                0.415,
+                0.12,
+                0.439
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.077,
+                0.447,
+                0.919,
+                0.458
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.469,
+                0.921,
+                0.482
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.493,
+                0.934,
+                0.504
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.513,
+                0.226,
+                0.528
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.54,
+                0.77,
+                0.556
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.07,
+                0.567,
+                0.158,
+                0.591
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.599,
+                0.936,
+                0.614
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.622,
+                0.729,
+                0.636
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.648,
+                0.936,
+                0.661
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.671,
+                0.937,
+                0.684
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.693,
+                0.307,
+                0.707
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.72,
+                0.936,
+                0.733
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.075,
+                0.742,
+                0.936,
+                0.755
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.764,
+                0.167,
+                0.78
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.072,
+                0.793,
+                0.179,
+                0.816
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.824,
+                0.937,
+                0.838
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.847,
+                0.385,
+                0.86
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.875,
+                0.157,
+                0.898
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.073,
+                0.907,
+                0.939,
+                0.928
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.074,
+                0.936,
+                0.247,
+                0.953
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ],
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.878,
+                0.021,
+                0.957,
+                0.037
+            ],
+            "angle": 0,
+            "content": "法律声明"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.07,
+                0.044,
+                0.943,
+                0.086
+            ],
+            "angle": 0,
+            "content": "本指南仅供参考，不构成任何形式的承诺，产品（包括但不限于颜色、大小、屏幕显示等）请以实物为准。如出现本指南与官网描述不一致的情况，请以官网说明为准，恕不另行通知。",
+            "merge_prev": false
+        },
+        {
+            "type": "page_number",
+            "bbox": [
+                0.931,
+                0.965,
+                0.957,
+                0.979
+            ],
+            "angle": 0,
+            "content": "15"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.045,
+                0.938,
+                0.061
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.076,
+                0.069,
+                0.829,
+                0.083
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]
