@@ -13,6 +13,9 @@ from app.utils.task_utils import *
 from app.utils.sse_utils import create_sse_queue, SSEEvent, sse_generator
 from app.clients.mongo_history_utils import *
 from app.query_process.agent.main_graph import query_app
+from app.utils.query_runs import QueryInProgressError, SessionRunRegistry
+
+_query_runs = SessionRunRegistry()
 
 
 # 定义fastapi对象
@@ -51,26 +54,34 @@ class QueryRequest(BaseModel):
     is_stream:bool = Field(False, title="是否流式返回结果")
 
 
-def run_query_graph(query: str, session_id: str, is_stream: bool):
-    # 一会回调用 main_graph执行
-    # 本次任务开启了！ is_stream = True 把结果加入到队列，sse可以取到
-    update_task_status(session_id, "processing", is_stream)
-
-    state = create_query_default_state(
-        session_id=session_id,
-        original_query=query,
-        is_stream=is_stream
-    )
+def run_query_graph(query: str, session_id: str, is_stream: bool,
+                    *, already_claimed: bool = False, release_on_finish: bool = True):
+    if not already_claimed and not _query_runs.acquire(session_id):
+        raise QueryInProgressError("同一会话已有查询正在执行")
     try:
+        # Only the owning run may reset its in-memory state. MongoDB history is
+        # separate and intentionally retained for multi-turn conversations.
+        clear_task(session_id)
+        update_task_status(session_id, "processing", is_stream)
+        state = create_query_default_state(
+            session_id=session_id, original_query=query, is_stream=is_stream
+        )
         query_app.invoke(state)
         # 本次任务开启了！ is_stream = True 把结果加入到队列，sse可以取到
         update_task_status(session_id, "completed", is_stream)
+        return True
     except Exception as e:
         logger.exception(f"---session_id = {session_id},查询流程出现异常！！{str(e)}")
-        # 修改 event = process
+        # Discard partial output as well as previous answers. A failed query must
+        # never look like a successful response with stale evidence.
+        clear_task(session_id)
         update_task_status(session_id, "failed", is_stream)
-        # 推送指定类型的事件
-        push_to_session(session_id, SSEEvent.ERROR, {"error": str(e)})
+        if is_stream:
+            push_to_session(session_id, SSEEvent.ERROR, {"error": "本次查询处理失败，请稍后重试"})
+        return False
+    finally:
+        if release_on_finish:
+            _query_runs.release(session_id)
 
 
 @app.post("/query")  # 客户端 -》 问题 -》 graph开启了 -》 查到rag的结果 -》 返回即可！！
@@ -83,31 +94,40 @@ async def query(request: QueryRequest,background_tasks: BackgroundTasks):
     query = request.query
     session_id = request.session_id or str(uuid.uuid4())
     is_stream = request.is_stream
+    if not _query_runs.acquire(session_id):
+        raise HTTPException(status_code=409, detail="同一会话已有查询正在执行，请等待完成后重试")
     # 判断是不是流式处理 （异步 -》 先返回一个结果 开始处理 | 后台运行图，结果向前端推送）
     if is_stream:
         # 只要开启流式处理，我们业务中就是将数据，插入到队列中！ {session_id , queue [update_task_state , add_running_task,add_done_list]}
         # 创建当前session_id对应的队列 =》 _session_stream
-        create_sse_queue(session_id)
-        # 异步执行  立即返回结果前端 || 中间的过程 sse 一点一点推送给前端
-        background_tasks.add_task(run_query_graph, query, session_id, is_stream)
-        logger.info(f"query:{query}已经开启了异步和流式处理！！")
-        return {
-            "session_id": session_id,
-            "message": "本次查询处理中...."
-        }
+        try:
+            clear_task(session_id)
+            update_task_status(session_id, "pending")
+            create_sse_queue(session_id)
+            background_tasks.add_task(
+                run_query_graph, query, session_id, is_stream, already_claimed=True
+            )
+            return {"session_id": session_id, "message": "本次查询处理中...."}
+        except Exception:
+            _query_runs.release(session_id)
+            raise
     else:
         # 同步执行
-        run_query_graph(query, session_id, is_stream)
-        # 获取最后一个节点插入的结果！ node_answer_output (answer)
-        answer = get_task_result(session_id,"answer")  # task_utils 封装的一个存储会话结果函数
-        # 返回对应的json数据即可
-        logger.info(f"query:{query}开启同步处理！处理结果为：{answer}!")
-        return {
-            "answer": answer,
-            "session_id": session_id,
-            "message": "本次查询处理完毕！",
-            "done_list": []
-        }
+        try:
+            ok = run_query_graph(query, session_id, is_stream,
+                                 already_claimed=True, release_on_finish=False)
+            if not ok:
+                raise HTTPException(status_code=500, detail="本次查询处理失败，请稍后重试")
+            return {
+                "answer": get_task_result(session_id, "answer"),
+                "sources": get_task_result(session_id, "sources", []),
+                "rerank_degraded": bool(get_task_result(session_id, "rerank_degraded", False)),
+                "session_id": session_id,
+                "message": "本次查询处理完毕！",
+                "done_list": []
+            }
+        finally:
+            _query_runs.release(session_id)
 
 
 @app.get("/stream/{session_id}")

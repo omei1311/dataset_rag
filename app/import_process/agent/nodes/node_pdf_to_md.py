@@ -50,7 +50,6 @@ def step_2_upload_and_poll(pdf_path_obj):
     url = f"{mineru_config.base_url}/file-urls/batch"
 
     logger.info(f"调试：请求URL = {url}")
-    logger.info(f"调试：API Key = {token[:10]}...")  # 只打印前10位，避免泄露
 
     header = {
         "Content-Type": "application/json",

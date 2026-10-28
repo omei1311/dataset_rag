@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "description": "手写合成排名，只测试指标实现，不代表任何实际模型、语料或检索策略的成绩。",
+  "configs": {
+    "synthetic-ranking-A": {
+      "synthetic-single": [
+        {"document_id": "synthetic-paper-A", "chunk_id": 0},
+        {"document_id": "synthetic-paper-A", "chunk_id": 0},
+        {"document_id": "synthetic-paper-B", "chunk_id": 0}
+      ],
+      "synthetic-multi": [
+        {"source": "web", "url": "https://example.invalid/synthetic", "text": "合成无关网页"},
+        {"document_id": "synthetic-paper-A", "chunk_id": 1},
+        {"document_id": "synthetic-paper-A", "chunk_id": 1},
+        {"document_id": "synthetic-paper-B", "chunk_id": 0}
+      ],
+      "synthetic-unanswerable": []
+    },
+    "synthetic-ranking-B": {
+      "synthetic-single": [{"document_id": "synthetic-paper-B", "chunk_id": 0}],
+      "synthetic-multi": [{"document_id": "synthetic-paper-A", "chunk_id": 1}],
+      "synthetic-unanswerable": [{"document_id": "synthetic-paper-A", "chunk_id": 0}]
+    }
+  }
+}

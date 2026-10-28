@@ -1,0 +1,26 @@
+[
+  {
+    "question_id": "synthetic-single",
+    "question": "合成文档 A 的第一段描述了什么？",
+    "synthetic": true,
+    "answerable": true,
+    "relevant_chunks": [{"document_id": "synthetic-paper-A", "chunk_id": 0}]
+  },
+  {
+    "question_id": "synthetic-multi",
+    "question": "合成文档 A 和 B 的两条证据分别是什么？",
+    "synthetic": true,
+    "answerable": true,
+    "relevant_chunks": [
+      {"document_id": "synthetic-paper-A", "chunk_id": 1},
+      {"document_id": "synthetic-paper-B", "chunk_id": 0}
+    ]
+  },
+  {
+    "question_id": "synthetic-unanswerable",
+    "question": "合成语料没有收录的实验结果是什么？",
+    "synthetic": true,
+    "answerable": false,
+    "relevant_chunks": []
+  }
+]

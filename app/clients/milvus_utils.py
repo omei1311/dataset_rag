@@ -75,7 +75,7 @@ def fetch_chunks_by_chunk_ids(
         return []
     # 默认返回字段：核心切片标识与内容字段
     if output_fields is None:
-        output_fields = ["chunk_id", "content", "title", "parent_title", "item_name"]
+        output_fields = ["chunk_id", "file_title", "content", "title", "parent_title", "item_name"]
 
     # 转换ID为INT64类型，分离有效/无效ID
     ok_ids, bad_ids = _coerce_int64_ids(chunk_ids)
