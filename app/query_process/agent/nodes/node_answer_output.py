@@ -7,7 +7,9 @@ from app.core.logger import logger
 from app.core.load_prompt import load_prompt
 from app.lm.lm_utils import get_llm_client
 from app.clients.mongo_history_utils import save_chat_message
+from app.query_process.agent.nodes.retrieval_common import build_evidence_context
 import re
+from urllib.parse import urlsplit
 
 _IMAGE_BLOCK_MARKER = "【图片】"
 MAX_CONTEXT_CHARS = 12000  # 限制 prompt的长度
@@ -49,29 +51,10 @@ def step_2_load_prompt(state):
     history = state.get("history", [])
 
     # 1. 先处理 chunk块的内容 -》 context
-    docs = []
-    used_length = 0  # 记录使用的长度
-    # reranked_docs => [{text,chunk_id,score,url,title,source local | web },{}]
-    # [1][text][source][url][title][score] \n\n
-    # [2][text][source][url][title][score] \n\n
-    for i, doc in enumerate(reranked_docs, start=1):
-        text = doc.get("text")
-        source = doc.get("source")
-        title = doc.get("title")
-        score = doc.get("score")
-        content = f"[{i}][source={source}][title={title}][score={score}]\n\n{text}"
-        """
-        [{i}][source={source}][title={title}][score={score}]
-
-        text chunk的内容。。。。
-        """
-        if used_length + len(content) > MAX_CONTEXT_CHARS:
-            logger.info(f"本次内容停止追加了！已经大于限制长度！")
-            break
-        docs.append(content)
-        used_length += len(content)  # 长度累加
-    # ["[{i}][text={text}][source={source}][title={title}][score={score}]]","[{i}][text={text}][source={source}][title={title}][score={score}]]","[{i}][text={text}][source={source}][title={title}][score={score}]]"]
-    final_context = "\n\n".join(docs)
+    final_context, sources = build_evidence_context(reranked_docs, MAX_CONTEXT_CHARS)
+    state["sources"] = sources
+    state["evidence_context"] = final_context
+    used_length = len(final_context)
     # 2. 再处理 history -> 聊天记录的内容
     history_str = ""  # 对话记录的内容
     if history and len(history) > 0:
@@ -83,10 +66,10 @@ def step_2_load_prompt(state):
                 current_history = f"【用户】: {text}\n"
             elif role == "assistant" and text:
                 current_history = f"【助手】: {text}\n"
-            history_str += current_history
-            used_length += len(current_history)  # 使用长度
-            if used_length > MAX_CONTEXT_CHARS:
-                logger.info(f"本次内容停止追加了！已经大于限制长度！")
+            available = max(0, MAX_CONTEXT_CHARS - used_length)
+            history_str += current_history[:available]
+            used_length += min(len(current_history), available)
+            if used_length >= MAX_CONTEXT_CHARS:
                 break
     else:
         history_str = "没有历史对话记录！"
@@ -146,32 +129,19 @@ def step_4_extract_images_url(state):
     images = []  # -> 存储图片 (On) (想要先后顺序)
     set_images = set()  # -> 图片重复判断  （重复时间复杂度 O1）
 
-    # 1. 定义正则
-    image_reg = re.compile(r"!\[.*?\]\((.*?)\)")
-    # reranked_docs => [{text,chunk_id,score,url,title,source local | web },{}]
-    # 2. 宣传处理切片 -》 从高分 -》 低分
-    reranked_docs = state.get("reranked_docs", [])
-    for doc in reranked_docs:
-        # {text,chunk_id,score,url,title,source local | web }
-        # url -> 是不是图片
-        url = doc.get("url")
-        if url:
-            if url.endswith((".png", ".jpg", ".jpeg", ".gif", ".webp")):
-                # set -> not in  O1
-                if url not in set_images:
-                    images.append(url)
-                    set_images.add(url)
-
-        text = doc.get("text")
-        # text -> 正则提取图片
-        if text:
-            # 正在匹配的所有图片
-            matches = image_reg.findall(text)
-            for image_url in matches:
-                if image_url not in set_images:
-                    images.append(image_url)
-                    set_images.add(image_url)
-        # 不存在-》添加到images即可
+    # Only complete image links in the retained context may be returned. The
+    # original reranked docs can include truncated tails or entirely omitted
+    # documents, and must not be scanned here.
+    image_reg = re.compile(r"!\[.*?\]\(([^)]+)\)")
+    retained_urls = image_reg.findall(state.get("evidence_context") or "")
+    for reference in state.get("sources") or []:
+        url = reference.get("url") or ""
+        if url and urlsplit(url).path.lower().endswith((".png", ".jpg", ".jpeg", ".gif", ".webp")):
+            retained_urls.append(url)
+    for image_url in retained_urls:
+        if image_url not in set_images:
+            images.append(image_url)
+            set_images.add(image_url)
     logger.info(f"已经完成图片提取。数量:{len(images)},提取内容：{images}")
     state['image_urls'] = images
     return images
@@ -224,23 +194,36 @@ def node_answer_output(state):
     """
     print("---node_answer_output 节点处理开始---")
     add_running_task(state["session_id"], sys._getframe().f_code.co_name, state.get("is_stream"))
+    state["image_urls"] = []
     # 1. 检查state中是否存在answer回答  【item_name (1.明确 【 2.不确定 3.没有】 answer -> state)】
     answer_exists = step_1_check_answer(state)
+    if answer_exists:
+        state["sources"] = []
+        state["evidence_context"] = ""
     if not answer_exists:
         # 2. 没有 成对应的润色的提示词 prompt
         prompt = step_2_load_prompt(state)
-        # 3. 没有 使用模型润色答案 -》 结果 -> 文本
-        answer = step_3_create_answer(state, prompt)
-        # 4. 没有 提取原来topklist中的图片地址，单独返回【see】
-        images_url = step_4_extract_images_url(state)
-        # 6. sse-final->返回图片
-        if images_url:
-            # 不管流 和 非流都需要返回图片
-            push_to_session(state["session_id"],
-                            SSEEvent.FINAL,
-                            {"answer": answer,
-                             "status": "completed",
-                             "image_urls": images_url})
+        if state.get("sources"):
+            answer = step_3_create_answer(state, prompt)
+            step_4_extract_images_url(state)
+        else:
+            # Do not ask the model to invent a grounded answer from empty evidence.
+            state["answer"] = "当前检索结果没有可用的参考资料，暂时无法给出有依据的回答。"
+            set_task_result(state["session_id"], "answer", state["answer"])
+            if state.get("is_stream"):
+                push_to_session(state["session_id"], SSEEvent.DELTA, {"delta": state["answer"]})
+    # Return only evidence that was included in the bounded model context.
+    sources = state.get("sources") or []
+    set_task_result(state["session_id"], "sources", sources)
+    set_task_result(state["session_id"], "rerank_degraded", state.get("rerank_degraded", False))
+    if state.get("is_stream"):
+        push_to_session(state["session_id"], SSEEvent.FINAL, {
+            "answer": state.get("answer"),
+            "status": "completed",
+            "image_urls": state.get("image_urls") or [],
+            "sources": sources,
+            "rerank_degraded": state.get("rerank_degraded", False),
+        })
     # 数据都已经推送完毕了
     # 5. 添加聊天记录（mongodb）
     step_5_write_history(state)

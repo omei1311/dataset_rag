@@ -1,5 +1,4 @@
-from typing_extensions import TypedDict
-from typing import List
+from typing import List, TypedDict
 import copy
 
 class QueryGraphState(TypedDict):
@@ -17,6 +16,9 @@ class QueryGraphState(TypedDict):
     # 排序过程中的数据
     rrf_chunks: list  # RRF 融合排序后的切片
     reranked_docs: list  # 重排序后的最终 Top-K 文档
+    rerank_degraded: bool  # 模型加载或打分失败时保留召回顺序
+    sources: list  # 实际进入回答上下文的证据，不等同已验证模型引用
+    evidence_context: str  # 预算内实际保留的证据文本，供图片提取复用
 
     # 生成过程中的数据
     prompt: str  # 组装好的 Prompt
@@ -40,6 +42,9 @@ query_graph_default_state: QueryGraphState = {
     "web_search_docs": [],
     "rrf_chunks": [],
     "reranked_docs": [],
+    "rerank_degraded": False,
+    "sources": [],
+    "evidence_context": "",
     "prompt": "",
     "answer": "",
     "item_names": [],

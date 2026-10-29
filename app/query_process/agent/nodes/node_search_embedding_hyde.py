@@ -60,7 +60,7 @@ def step_2_search_embedding_hyde(rewritten_query, hyde_doc, item_names):
         collection_name=milvus_config.chunks_collection,
         reqs=reqs,
         ranker_weights=(0.9, 0.1),
-        output_fields=["item_name", "content", "title", "parent_title", "chunk_id"]
+        output_fields=["item_name", "file_title", "content", "title", "parent_title", "chunk_id"]
     )
     # 5.处理返回结果
     result = resp[0] if resp else []
